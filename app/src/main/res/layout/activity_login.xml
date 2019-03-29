@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:padding="30dp"
+    tools:context=".LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="#fff"
+        android:padding="30dp">
+
+        <EditText
+            android:id="@+id/activity_login_edit_text_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:hint="@string/email"
+            android:padding="10dp"
+            android:textFontWeight="" />
+
+        <EditText
+            android:id="@+id/activity_login_edit_text_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/activity_login_edit_text_email"
+            android:layout_centerHorizontal="true"
+            android:hint="@string/password"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/activity_login_text_view_forgot_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/activity_login_edit_text_password"
+            android:layout_alignParentRight="true"
+            android:gravity="right"
+            android:padding="10dp"
+            android:text="@string/forgot_password" />
+
+        <Button
+            android:id="@+id/activity_login_button_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/activity_login_text_view_forgot_password"
+            android:padding="10dp"
+            android:text="@string/login" />
+
+    </RelativeLayout>
+</RelativeLayout>
