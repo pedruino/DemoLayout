@@ -4,24 +4,42 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimaryDark"
+    android:background="#5DBCD2"
     android:padding="30dp"
     tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/activity_login_text_view_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:padding="10dp"
+
+        android:textColor="#fff"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        android:textFontWeight="400"
+        android:text="Entrar" />
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:background="#fff"
-        android:padding="30dp">
+        android:paddingTop="50dp"
+        android:paddingBottom="50dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:background="#fff">
 
         <EditText
             android:id="@+id/activity_login_edit_text_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:hint="@string/email"
+            android:hint="E-mail"
             android:padding="10dp"
             android:textFontWeight="" />
 
@@ -31,7 +49,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/activity_login_edit_text_email"
             android:layout_centerHorizontal="true"
-            android:hint="@string/password"
+            android:hint="Senha"
             android:padding="10dp" />
 
         <TextView
@@ -42,15 +60,20 @@
             android:layout_alignParentRight="true"
             android:gravity="right"
             android:padding="10dp"
-            android:text="@string/forgot_password" />
+            android:text="Esqueci a senha" />
 
         <Button
             android:id="@+id/activity_login_button_login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/activity_login_text_view_forgot_password"
-            android:padding="10dp"
-            android:text="@string/login" />
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:textColor="#fff"
+            android:background="#D37600"
+            android:textAllCaps="false"
+            android:text="Entrar" />
 
     </RelativeLayout>
 </RelativeLayout>
